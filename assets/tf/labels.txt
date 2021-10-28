@@ -1,0 +1,3 @@
+0 Batu
+1 Gunting
+2 Kertas

@@ -77,13 +77,12 @@ class _HomePageState extends State<HomePage> {
 
   Future loadModel() async {
     await Tflite.loadModel(
-        model: 'assets/tf/modelnew.tflite',
-        labels: 'assets/tf/label.txt',
+        model: 'assets/tf/model_unquant.tflite',
+        labels: 'assets/tf/labels.txt',
         numThreads: 1,
         useGpuDelegate: false
     );
   }
-
 
   void pickImage(ImageSource imageSource) async {
     var image = await ImagePicker().getImage(source: imageSource);
